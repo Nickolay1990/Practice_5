@@ -20,6 +20,8 @@
         <link rel="stylesheet" href="./styles/styles.css" />
     </head>
     <body>
+        <!-- ===================== header =========================== -->
+
         <header class="pageheader">
             <div class="container">
                 <div class="header-topline">
@@ -28,16 +30,117 @@
                             <use href="./img/icons.svg#icon-logo"></use>
                         </svg>
                     </a>
-                    <button class="pageheader-topline-button">
+                    <button class="pageheader-topline-button" id="button-menu">
                         <svg class="pageheader-topline-button-pic" width="28" height="15">
                             <use href="./img/icons.svg#icon-menu"></use>
                         </svg>
                     </button>
+                    <button class="mobile-menu-close visually-hidden" id="mobile-menu-close">
+                        <svg class="mobile-menu-close-pic" width="20" height="20">
+                            <use href="./img/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
                 </div>
-                <h1 class="pageheader-title">TOURS TO THE CARPATHIANS FROM LVIV</h1>
-                <p class="pageheader-text">Journeys to the very heart of the Carpathians for those who want a real reboot</p>
-                <button class="pageheader-book">BOOK A TOUR</button>
             </div>
         </header>
+
+        <!-- ===================== hero =========================== -->
+
+        <section class="hero">
+            <div class="container">
+                <h1 class="pageheader-title" id="pageheader-title">TOURS TO THE CARPATHIANS FROM LVIV</h1>
+                <p class="pageheader-text" id="pageheader-text">
+                    Journeys to the very heart of the Carpathians for those who want a real reboot
+                </p>
+                <button class="pageheader-book" id="pageheader-book">BOOK A TOUR</button>
+            </div>
+
+            <!-- ===================== mobile menu =========================== -->
+
+            <div class="mobile-menu" id="mobile-menu">
+                <div class="container">
+                    <nav class="mobile-menu-nav">
+                        <ul class="mobile-menu-nav-list">
+                            <li><a class="mobile-menu-nav-list-link" href="">About us</a></li>
+                            <li><a class="mobile-menu-nav-list-link" href="">Тours</a></li>
+                            <li><a class="mobile-menu-nav-list-link" href="">Reviews</a></li>
+                            <li><a class="mobile-menu-nav-list-link" href="">Gallery</a></li>
+                            <li><a class="mobile-menu-nav-list-link" href="">Contacts</a></li>
+                        </ul>
+                    </nav>
+
+                    <ul class="mobile-menu-social-list">
+                        <li>
+                            <a class="mobile-menu-social-list-link" href="">
+                                <svg class="mobile-menu-social-list-link-pic" width="33" height="33">
+                                    <use href="./img/icons.svg#icon-telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="mobile-menu-social-list-link" href="">
+                                <svg class="mobile-menu-social-list-link-pic" width="33" height="33">
+                                    <use href="./img/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="mobile-menu-social-list-link" href="">
+                                <svg class="mobile-menu-social-list-link-pic" width="33" height="33">
+                                    <use href="./img/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== modal =========================== -->
+
+        <div class="backdrop" id="backdrop">
+            <div class="modal">
+                <div class="container">
+                    <button type="button" class="modal-close" id="modal-close">
+                        <svg class="modal-close-pic" width="15" height="15">
+                            <use href="./img/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <h2 class="modal-title">Book a tour</h2>
+                    <p class="modal-text">You can leave your application here and our manager will call you within 10 minutes</p>
+                    <form class="modal-form">
+                        <input type="text" name="username" class="modal-form-input" placeholder="Your name*" />
+                        <input type="tel" name="phone" class="modal-form-input" placeholder="Phone number*" />
+
+                        <label class="modal-form-label"
+                            ><input type="checkbox" name="first-check" class="visually-hidden modal-form-label-checkbox" />
+                            <span class="modal-form-label-span"
+                                ><svg class="modal-form-label-span-pic" width="20" height="20">
+                                    <use href="./img/icons.svg#icon-checkmark"></use></svg></span
+                            >Ascent to Hoverla</label
+                        >
+
+                        <label class="modal-form-label"
+                            ><input type="checkbox" name="second-check" class="visually-hidden modal-form-label-checkbox" />
+                            <span class="modal-form-label-span"
+                                ><svg class="modal-form-label-span-pic" width="20" height="20">
+                                    <use href="./img/icons.svg#icon-checkmark"></use></svg></span
+                            >Ski tour to Bukovel</label
+                        >
+                        <label class="modal-form-label">
+                            <input type="checkbox" name="third-check" class="visually-hidden modal-form-label-checkbox" />
+                            <span class="modal-form-label-span"
+                                ><svg class="modal-form-label-span-pic" width="20" height="20">
+                                    <use href="./img/icons.svg#icon-checkmark"></use></svg
+                            ></span>
+                            Week in Carpathians</label
+                        >
+                        <button class="modal-form-submit" type="submit">CALL ME</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/mobile-menu.js"></script>
     </body>
 </html>
