@@ -17,6 +17,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    font-size: 16px;
+    background-color: #f7fbfb;
 }
 
 ul,
@@ -38,12 +40,29 @@ a {
     text-decoration: none;
 }
 
+fieldset {
+    border: none;
+}
+
 /* =============== pseudoclasses ================= */
 
 .modal-form-username::placeholder {
     color: #202321;
 }
 
+.modal-form-label:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.pageheader-book:active,
+.modal-form-submit:active {
+    background-color: #f7fbfb;
+    color: #1b1d1b;
+}
+
+.mobile-menu-social-list-link:active > .mobile-menu-social-list-link-pic {
+    fill: #5b86a1;
+}
 /* =============== general ================= */
 
 .container {
@@ -171,6 +190,7 @@ a {
     font-weight: 500;
     color: #f7fbfb;
     margin: 0 auto;
+    transition: background-color 250ms, color 250ms;
 }
 
 /* =============== mobile-menu ================= */
@@ -299,6 +319,10 @@ a {
     width: 315px;
 }
 
+.modal-form-set {
+    margin-bottom: 24px;
+}
+
 .modal-form-input {
     border: none;
     border-bottom: 1px solid #a3a5a3;
@@ -311,7 +335,6 @@ a {
 .modal-form-label {
     display: flex;
     gap: 12px;
-    margin-bottom: 24px;
     color: #1b1d1b;
 }
 
@@ -340,4 +363,23 @@ a {
     border: none;
     font-weight: 500;
     color: #f7fbfb;
+    transition: background-color 250ms, color 250ms;
+}
+
+/* =============== about ================= */
+
+.about {
+    padding: 33px 0 26px;
+}
+
+.about-title {
+    font-weight: 400;
+    font-size: 32px;
+    color: #1b1d1b;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.about-text {
+    color: #202321;
 }
